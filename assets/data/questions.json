@@ -1,0 +1,556 @@
+{
+    "categories": {
+        "Bregenzer Festspiele": [
+            {
+                "question": "What is the Bregenzer Festspiele most famous for?",
+                "options": [
+                    "Opera performances on a floating stage",
+                    "Rock music concerts",
+                    "Food festivals"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "In which month does the Bregenzer Festspiele typically take place?",
+                "options": [
+                    "August",
+                    "July",
+                    "June"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "question": "Which opera was famously performed on the floating stage in 2021?",
+                "options": [
+                    "Rigoletto",
+                    "Carmen",
+                    "La Traviata"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "How many people can the floating stage at the Bregenzer Festspiele seat?",
+                "options": [
+                    "7,000",
+                    "10,000",
+                    "15,000"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Where is the floating stage located?",
+                "options": [
+                    "On Lake Constance",
+                    "In Pfänder Mountain",
+                    "Near the Vorarlberg Museum"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is unique about the Bregenzer Festspiele stage designs?",
+                "options": [
+                    "They are often large and elaborate",
+                    "They use holographic projections",
+                    "They are built from ice"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which of the following is often performed at Bregenzer Festspiele?",
+                "options": [
+                    "Classical Operas",
+                    "Electronic Music",
+                    "Stand-up Comedy"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "In which year did the Bregenzer Festspiele first start?",
+                "options": [
+                    "1946",
+                    "1956",
+                    "1966"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is a recurring theme in Bregenzer Festspiele performances?",
+                "options": [
+                    "Historical stories",
+                    "Science fiction themes",
+                    "Political satire"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which lake provides the backdrop for the floating stage?",
+                "options": [
+                    "Lake Constance",
+                    "Lake Zurich",
+                    "Lake Geneva"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "Lake Constance": [
+            {
+                "question": "Which countries border Lake Constance?",
+                "options": [
+                    "Austria, Germany, and Switzerland",
+                    "Austria, Italy, and France",
+                    "Germany, France, and Switzerland"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the German name for Lake Constance?",
+                "options": [
+                    "Bodensee",
+                    "Königssee",
+                    "Ammersee"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which major river flows into and out of Lake Constance?",
+                "options": [
+                    "Rhine",
+                    "Danube",
+                    "Elbe"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What activity is popular on Lake Constance during the summer?",
+                "options": [
+                    "Sailing",
+                    "Ice skating",
+                    "Mountain climbing"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which city on Lake Constance is known for its annual festival on a floating stage?",
+                "options": [
+                    "Bregenz",
+                    "Friedrichshafen",
+                    "Konstanz"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What type of wildlife can be commonly found around Lake Constance?",
+                "options": [
+                    "Waterfowl",
+                    "Polar bears",
+                    "Desert foxes"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the approximate surface area of Lake Constance?",
+                "options": [
+                    "536 km²",
+                    "236 km²",
+                    "836 km²"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What major attraction is located near Lake Constance?",
+                "options": [
+                    "Pfänder Mountain",
+                    "Matterhorn",
+                    "Zugspitze"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which island on Lake Constance is famous for its gardens?",
+                "options": [
+                    "Mainau",
+                    "Heligoland",
+                    "Rügen"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is a popular tourist activity on Lake Constance during winter?",
+                "options": [
+                    "Ice sailing",
+                    "Surfing",
+                    "Skiing"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "Pfänder Mountain": [
+            {
+                "question": "What is the height of Pfänder Mountain?",
+                "options": [
+                    "1,064 meters",
+                    "2,500 meters",
+                    "500 meters"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which city is located at the base of Pfänder Mountain?",
+                "options": [
+                    "Bregenz",
+                    "Innsbruck",
+                    "Vienna"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What can you see from the top of Pfänder Mountain?",
+                "options": [
+                    "A panoramic view of Lake Constance",
+                    "A desert",
+                    "A waterfall"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which activity is popular on Pfänder Mountain?",
+                "options": [
+                    "Hiking",
+                    "Surfing",
+                    "Horse racing"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "How can you reach the top of Pfänder Mountain?",
+                "options": [
+                    "Cable car",
+                    "Helicopter",
+                    "Subway"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What type of wildlife can be found on Pfänder Mountain?",
+                "options": [
+                    "Eagles",
+                    "Tigers",
+                    "Dolphins"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which season is ideal for skiing on Pfänder Mountain?",
+                "options": [
+                    "Winter",
+                    "Summer",
+                    "Autumn"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the main attraction at the top of Pfänder Mountain?",
+                "options": [
+                    "The Alpine Wildlife Park",
+                    "An ancient temple",
+                    "A zoo with exotic animals"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which lake can be seen from the summit of Pfänder Mountain?",
+                "options": [
+                    "Lake Constance",
+                    "Lake Zurich",
+                    "Lake Geneva"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What outdoor activity is popular on Pfänder Mountain during summer?",
+                "options": [
+                    "Paragliding",
+                    "Snowboarding",
+                    "Kayaking"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "Historic Old Town": [
+            {
+                "question": "What is the central square of Bregenz's historic old town?",
+                "options": [
+                    "Leopold Square",
+                    "Fischmarkt",
+                    "Platz am See"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "question": "What architectural style can be found in Bregenz’s old town?",
+                "options": [
+                    "Medieval",
+                    "Modernist",
+                    "Baroque"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which famous castle is located in the old town of Bregenz?",
+                "options": [
+                    "Martinsturm",
+                    "Hohensalzburg",
+                    "Schloss Schönbrunn"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What does 'Martinsturm' translate to in English?",
+                "options": [
+                    "Martin's Tower",
+                    "Martin's Church",
+                    "Martin's Garden"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which religious building is a notable landmark in the old town of Bregenz?",
+                "options": [
+                    "St. Gallus Church",
+                    "St. Peter's Cathedral",
+                    "Notre Dame"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What year was the city of Bregenz founded?",
+                "options": [
+                    "15 BC",
+                    "50 AD",
+                    "500 AD"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which famous annual event takes place in Bregenz’s old town?",
+                "options": [
+                    "Bregenz Festival",
+                    "Vienna Opera Ball",
+                    "Salzburg Festival"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What river flows through Bregenz's historic old town?",
+                "options": [
+                    "Rhine",
+                    "Danube",
+                    "Elbe"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which style is predominant in the buildings of Bregenz’s old town?",
+                "options": [
+                    "Baroque",
+                    "Gothic",
+                    "Renaissance"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "question": "Which famous bridge connects Bregenz’s old town with the surrounding area?",
+                "options": [
+                    "Arlberg Bridge",
+                    "Bregenz Bridge",
+                    "Lindau Bridge"
+                ],
+                "correctAnswerIndex": 1
+            }
+        ],
+        "Vorarlberg Museum": [
+            {
+                "question": "What type of exhibits can be found in the Vorarlberg Museum?",
+                "options": [
+                    "Art and history",
+                    "Fossils and dinosaurs",
+                    "Space exploration"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "When was the Vorarlberg Museum founded?",
+                "options": [
+                    "1857",
+                    "1957",
+                    "1757"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which region's history does the Vorarlberg Museum focus on?",
+                "options": [
+                    "Vorarlberg",
+                    "Tyrol",
+                    "Bavaria"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the architectural style of the Vorarlberg Museum building?",
+                "options": [
+                    "Modern",
+                    "Classical",
+                    "Gothic"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which famous artist’s works are featured in the Vorarlberg Museum?",
+                "options": [
+                    "Albrecht Dürer",
+                    "Egon Schiele",
+                    "Gustav Klimt"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "question": "What is a notable feature of the Vorarlberg Museum's exhibitions?",
+                "options": [
+                    "Interactive displays",
+                    "Ancient artifacts",
+                    "Live animal exhibits"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which type of art is particularly highlighted in the Vorarlberg Museum?",
+                "options": [
+                    "Folk art",
+                    "Contemporary art",
+                    "Prehistoric art"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "question": "The Vorarlberg Museum often collaborates with which type of institutions?",
+                "options": [
+                    "Universities",
+                    "Music halls",
+                    "Sports teams"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which annual event is hosted by the Vorarlberg Museum?",
+                "options": [
+                    "Art week",
+                    "Music festival",
+                    "Historical reenactment"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the main focus of the Vorarlberg Museum's educational programs?",
+                "options": [
+                    "Local history and culture",
+                    "International history",
+                    "Modern science"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "Kunsthaus Bregenz": [
+            {
+                "question": "What type of art is primarily exhibited at the Kunsthaus Bregenz?",
+                "options": [
+                    "Contemporary art",
+                    "Renaissance art",
+                    "Ancient Greek art"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Who designed the Kunsthaus Bregenz building?",
+                "options": [
+                    "Peter Zumthor",
+                    "Le Corbusier",
+                    "Frank Gehry"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "When was the Kunsthaus Bregenz opened?",
+                "options": [
+                    "1997",
+                    "2001",
+                    "1995"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which architectural feature is notable at Kunsthaus Bregenz?",
+                "options": [
+                    "Glass facade",
+                    "Gothic spires",
+                    "Baroque decorations"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which type of exhibitions are most common at Kunsthaus Bregenz?",
+                "options": [
+                    "Temporary exhibitions",
+                    "Permanent collections",
+                    "Historical artifacts"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is a key characteristic of the Kunsthaus Bregenz's exhibition spaces?",
+                "options": [
+                    "Flexible layout",
+                    "Fixed layout",
+                    "Outdoor spaces"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which other renowned architect's work is in close proximity to Kunsthaus Bregenz?",
+                "options": [
+                    "Zaha Hadid",
+                    "Rem Koolhaas",
+                    "Tadao Ando"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "question": "Which type of art does Kunsthaus Bregenz NOT typically feature?",
+                "options": [
+                    "Digital art",
+                    "Classical art",
+                    "Folk art"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "question": "What is a frequent theme of exhibitions at Kunsthaus Bregenz?",
+                "options": [
+                    "Social issues",
+                    "Historical events",
+                    "Natural history"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which famous biennale has featured Kunsthaus Bregenz?",
+                "options": [
+                    "Venice Biennale",
+                    "Documenta",
+                    "Ars Electronica"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ]
+    }
+}

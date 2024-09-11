@@ -1,0 +1,44 @@
+{
+    "questions": [
+        {
+            "question": "Bregenz is the capital city of Vorarlberg, Austria.",
+            "answer": true
+        },
+        {
+            "question": "Lake Bregenz is the largest freshwater lake in Austria.",
+            "answer": false
+        },
+        {
+            "question": "Bregenz is known for its annual Bregenz Festival, a famous performing arts festival.",
+            "answer": true
+        },
+        {
+            "question": "The Bregenz Festival's floating stage is located on the Danube River.",
+            "answer": false
+        },
+        {
+            "question": "Bregenz is located near the borders of Switzerland and Germany.",
+            "answer": true
+        },
+        {
+            "question": "The Pfänder mountain, near Bregenz, is popular for its hiking trails and panoramic views.",
+            "answer": true
+        },
+        {
+            "question": "Bregenz's Kunsthaus Bregenz is a famous museum dedicated to contemporary art.",
+            "answer": true
+        },
+        {
+            "question": "The currency used in Bregenz is the Swiss franc.",
+            "answer": false
+        },
+        {
+            "question": "Bregenz is situated on the eastern shore of Lake Geneva.",
+            "answer": false
+        },
+        {
+            "question": "Bregenz has a rich history dating back to Roman times.",
+            "answer": true
+        }
+    ]
+}
