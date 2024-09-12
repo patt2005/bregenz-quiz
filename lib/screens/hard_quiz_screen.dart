@@ -271,12 +271,16 @@ class _HardQuizScreenState extends State<HardQuizScreen> {
                           setState(() {});
                         }
                       },
-                      child: Image.asset(
-                        "assets/images/bolt.png",
-                        width: screenSize.height * 0.1,
-                        height: screenSize.height * 0.1,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(15),
+                        child: Image.asset(
+                          "assets/images/bolt.png",
+                          width: screenSize.height * 0.07,
+                          height: screenSize.height * 0.07,
+                        ),
                       ),
                     ),
+                    SizedBox(height: screenSize.height * 0.01),
                     Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),

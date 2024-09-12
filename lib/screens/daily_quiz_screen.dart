@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'package:bregenz_quiz_game/models/true_false_question.dart';
-import 'package:bregenz_quiz_game/screens/results_screen.dart';
 import 'package:bregenz_quiz_game/screens/story_screen.dart';
 import 'package:bregenz_quiz_game/utils/utils.dart';
 import 'package:bregenz_quiz_game/widgets/fade_button.dart';
@@ -172,7 +171,7 @@ class _DailyQuizScreenState extends State<DailyQuizScreen> {
                       ),
                     const SizedBox(height: 10),
                     FadeButton(
-                      text: "Return",
+                      text: "Back",
                       onPressed: () {
                         Navigator.of(context).pop();
                       },

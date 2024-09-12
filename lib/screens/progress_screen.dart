@@ -46,13 +46,10 @@ class _ProgressScreenState extends State<ProgressScreen> {
                 ),
               ),
               SizedBox(height: screenSize.height * 0.03),
-
-              // Updated layout for "Easy" and "Hard" with coins
               Expanded(
                 child: Column(
                   children: [
                     Container(
-                      height: screenSize.height * 0.1,
                       width: double.infinity,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(25),
@@ -95,7 +92,6 @@ class _ProgressScreenState extends State<ProgressScreen> {
                     ),
                     SizedBox(height: screenSize.height * 0.03),
                     Container(
-                      height: screenSize.height * 0.1,
                       width: double.infinity,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(25),
