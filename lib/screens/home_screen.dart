@@ -1,6 +1,7 @@
 import 'package:bregenz_quiz_game/screens/daily_quiz_screen.dart';
 import 'package:bregenz_quiz_game/screens/mode_screen.dart';
 import 'package:bregenz_quiz_game/screens/progress_screen.dart';
+import 'package:bregenz_quiz_game/screens/settings_screen.dart';
 import 'package:bregenz_quiz_game/utils/utils.dart';
 import 'package:bregenz_quiz_game/widgets/fade_button.dart';
 import 'package:flutter/cupertino.dart';
@@ -40,7 +41,7 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Image.asset(
                 "assets/images/image.png",
                 width: screenSize.width,
-                height: screenSize.height * 0.3,
+                height: screenSize.height * 0.25,
                 fit: BoxFit.cover,
               ),
             ),
@@ -73,6 +74,17 @@ class _HomeScreenState extends State<HomeScreen> {
                 await Navigator.of(context).push(
                   CupertinoPageRoute(
                     builder: (context) => const DailyQuizScreen(),
+                  ),
+                );
+              },
+            ),
+            SizedBox(height: screenSize.height * 0.02),
+            FadeButton(
+              text: "Settings",
+              onPressed: () async {
+                await Navigator.of(context).push(
+                  CupertinoPageRoute(
+                    builder: (context) => const SettingsScreen(),
                   ),
                 );
               },
