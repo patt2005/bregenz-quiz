@@ -61,7 +61,7 @@ class _DailyQuizScreenState extends State<DailyQuizScreen> {
             _selectedOptionIndex == index
                 ? _isAnswerCorrect
                     ? Colors.green.withOpacity(0.5)
-                    : Colors.red.withOpacity(0.5)
+                    : Colors.pink.withOpacity(0.8)
                 : Colors.transparent,
           ),
           shape: WidgetStatePropertyAll(
@@ -138,23 +138,6 @@ class _DailyQuizScreenState extends State<DailyQuizScreen> {
                             _answeredQuestions++;
                           }
                         });
-
-                        await Future.delayed(
-                          const Duration(seconds: 2),
-                          () async {
-                            _currentQuestionIndex++;
-                            if (_currentQuestionIndex >= _questions.length) {
-                              await Navigator.of(context).pushReplacement(
-                                MaterialPageRoute(
-                                  builder: (context) => const StoryScreen(),
-                                ),
-                              );
-                            }
-                            _selectedOptionIndex = null;
-                            _isAnswerCorrect = false;
-                            setState(() {});
-                          },
-                        );
                       }
                     }, 0),
                     _buildOptionCard("False", () async {
@@ -167,31 +150,29 @@ class _DailyQuizScreenState extends State<DailyQuizScreen> {
                             _answeredQuestions++;
                           }
                         });
-
-                        await Future.delayed(
-                          const Duration(seconds: 2),
-                          () async {
-                            _currentQuestionIndex++;
-                            if (_currentQuestionIndex >= _questions.length) {
-                              await Navigator.of(context).pushReplacement(
-                                MaterialPageRoute(
-                                  builder: (context) => ResultsScreen(
-                                    answeredQuestions: _answeredQuestions,
-                                    totalCoins: 200,
-                                  ),
-                                ),
-                              );
-                            }
-                            _selectedOptionIndex = null;
-                            _isAnswerCorrect = false;
-                            setState(() {});
-                          },
-                        );
                       }
                     }, 1),
                     const Spacer(),
+                    if (_selectedOptionIndex != null)
+                      FadeButton(
+                        text: "Continue",
+                        onPressed: () async {
+                          _currentQuestionIndex++;
+                          if (_currentQuestionIndex >= _questions.length) {
+                            await Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(
+                                builder: (context) => const StoryScreen(),
+                              ),
+                            );
+                          }
+                          _selectedOptionIndex = null;
+                          _isAnswerCorrect = false;
+                          setState(() {});
+                        },
+                      ),
+                    const SizedBox(height: 10),
                     FadeButton(
-                      text: "Back",
+                      text: "Return",
                       onPressed: () {
                         Navigator.of(context).pop();
                       },

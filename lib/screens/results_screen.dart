@@ -1,8 +1,10 @@
+import 'package:bregenz_quiz_game/models/game_manager.dart';
 import 'package:bregenz_quiz_game/screens/story_screen.dart';
 import 'package:bregenz_quiz_game/utils/utils.dart';
 import 'package:bregenz_quiz_game/widgets/fade_button.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class ResultsScreen extends StatefulWidget {
   final int answeredQuestions;
@@ -21,6 +23,8 @@ class ResultsScreen extends StatefulWidget {
 class _ResultsScreenState extends State<ResultsScreen> {
   @override
   Widget build(BuildContext context) {
+    // final provider = Provider.of<GameManager>(context, listen: false);
+
     return Scaffold(
       backgroundColor: backgroundColor,
       body: SafeArea(
@@ -29,18 +33,24 @@ class _ResultsScreenState extends State<ResultsScreen> {
           child: Column(
             children: [
               SizedBox(height: screenSize.height * 0.01),
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  gradient: LinearGradient(
-                    colors: [redColor, whiteColor, redColor],
+              Consumer<GameManager>(
+                builder: (context, value, child) => Container(
+                  padding:
+                      EdgeInsets.symmetric(vertical: screenSize.height * 0.01),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    gradient: LinearGradient(
+                      colors: [redColor, whiteColor, redColor],
+                    ),
                   ),
-                ),
-                width: screenSize.width,
-                child: Image.asset(
-                  "assets/images/profile_image.png",
                   width: screenSize.width,
-                  height: screenSize.height * 0.22,
+                  child: Image.asset(
+                    value.profileImagePath.isEmpty
+                        ? "assets/images/profile_image.png"
+                        : value.profileImagePath,
+                    width: screenSize.width,
+                    height: screenSize.height * 0.18,
+                  ),
                 ),
               ),
               SizedBox(height: screenSize.height * 0.03),
@@ -104,7 +114,7 @@ class _ResultsScreenState extends State<ResultsScreen> {
               ),
               SizedBox(height: screenSize.height * 0.02),
               FadeButton(
-                text: "Read",
+                text: "Discover Story",
                 onPressed: () async {
                   await Navigator.of(context).push(
                     CupertinoPageRoute(
@@ -115,7 +125,7 @@ class _ResultsScreenState extends State<ResultsScreen> {
               ),
               const Spacer(),
               FadeButton(
-                text: "Back",
+                text: "Return",
                 onPressed: () {
                   for (int i = 0; i < 2; i++) {
                     Navigator.of(context).pop();

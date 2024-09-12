@@ -47,7 +47,7 @@ class _IntroScreenState extends State<IntroScreen> {
                   vertical: screenSize.height * 0.02,
                 ),
                 decoration: BoxDecoration(
-                  color: buttonColor,
+                  color: buttonColor.withOpacity(0.3),
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: Row(

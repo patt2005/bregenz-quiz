@@ -25,145 +25,115 @@ class _ProgressScreenState extends State<ProgressScreen> {
           child: Column(
             children: [
               SizedBox(height: screenSize.height * 0.01),
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  gradient: LinearGradient(
-                    colors: [redColor, whiteColor, redColor],
+              Consumer<GameManager>(
+                builder: (context, value, child) => Container(
+                  padding:
+                      EdgeInsets.symmetric(vertical: screenSize.height * 0.01),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    gradient: LinearGradient(
+                      colors: [redColor, whiteColor, redColor],
+                    ),
+                  ),
+                  width: screenSize.width,
+                  child: Image.asset(
+                    value.profileImagePath.isEmpty
+                        ? "assets/images/profile_image.png"
+                        : value.profileImagePath,
+                    width: screenSize.width,
+                    height: screenSize.height * 0.18,
                   ),
                 ),
-                width: screenSize.width,
-                child: Image.asset(
-                  "assets/images/profile_image.png",
-                  width: screenSize.width,
-                  height: screenSize.height * 0.22,
-                ),
               ),
               SizedBox(height: screenSize.height * 0.03),
-              SizedBox(
-                height: screenSize.height * 0.06,
-                child: Row(
+
+              // Updated layout for "Easy" and "Hard" with coins
+              Expanded(
+                child: Column(
                   children: [
-                    Expanded(
-                      child: Container(
-                        height: double.infinity,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          gradient: LinearGradient(
-                            colors: [redColor, whiteColor, redColor],
-                          ),
-                        ),
-                        child: const Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text(
-                              "Easy",
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.w700,
-                                fontSize: 23,
-                              ),
-                            ),
-                          ],
+                    Container(
+                      height: screenSize.height * 0.1,
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(25),
+                        gradient: LinearGradient(
+                          colors: [redColor, whiteColor, redColor],
                         ),
                       ),
-                    ),
-                    const SizedBox(width: 20),
-                    Expanded(
-                      child: Container(
-                        height: double.infinity,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          gradient: LinearGradient(
-                            colors: [redColor, whiteColor, redColor],
-                          ),
-                        ),
-                        child: const Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text(
-                              "Hard",
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.w700,
-                                fontSize: 23,
-                              ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          const Text(
+                            "Easy",
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.w700,
+                              fontSize: 23,
                             ),
-                          ],
-                        ),
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                provider.easyModeTotalCoins.toString(),
+                                style: const TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 23,
+                                ),
+                              ),
+                              const SizedBox(width: 7),
+                              Image.asset(
+                                "assets/images/coins.png",
+                                width: 40,
+                                height: 40,
+                              ),
+                            ],
+                          ),
+                        ],
                       ),
                     ),
-                  ],
-                ),
-              ),
-              SizedBox(height: screenSize.height * 0.03),
-              SizedBox(
-                height: screenSize.height * 0.06,
-                child: Row(
-                  children: [
-                    Expanded(
-                      child: Container(
-                        height: double.infinity,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          gradient: LinearGradient(
-                            colors: [redColor, whiteColor, redColor],
-                          ),
-                        ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text(
-                              provider.easyModeTotalCoins.toString(),
-                              style: const TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.w700,
-                                fontSize: 23,
-                              ),
-                            ),
-                            const SizedBox(width: 7),
-                            Image.asset(
-                              "assets/images/coins.png",
-                              width: 40,
-                              height: 40,
-                            ),
-                          ],
+                    SizedBox(height: screenSize.height * 0.03),
+                    Container(
+                      height: screenSize.height * 0.1,
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(25),
+                        gradient: LinearGradient(
+                          colors: [redColor, whiteColor, redColor],
                         ),
                       ),
-                    ),
-                    const SizedBox(width: 20),
-                    Expanded(
-                      child: Container(
-                        height: double.infinity,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
-                          gradient: LinearGradient(
-                            colors: [redColor, whiteColor, redColor],
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          const Text(
+                            "Hard",
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.w700,
+                              fontSize: 23,
+                            ),
                           ),
-                        ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Text(
-                              provider.hardModeTotalCoins.toString(),
-                              style: const TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.w700,
-                                fontSize: 23,
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                provider.hardModeTotalCoins.toString(),
+                                style: const TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 23,
+                                ),
                               ),
-                            ),
-                            const SizedBox(width: 7),
-                            Image.asset(
-                              "assets/images/coins.png",
-                              width: 40,
-                              height: 40,
-                            ),
-                          ],
-                        ),
+                              const SizedBox(width: 7),
+                              Image.asset(
+                                "assets/images/coins.png",
+                                width: 40,
+                                height: 40,
+                              ),
+                            ],
+                          ),
+                        ],
                       ),
                     ),
                   ],
@@ -179,7 +149,7 @@ class _ProgressScreenState extends State<ProgressScreen> {
               ),
               SizedBox(height: screenSize.height * 0.02),
               FadeButton(
-                text: "Back",
+                text: "Return",
                 onPressed: () {
                   Navigator.of(context).pop();
                 },

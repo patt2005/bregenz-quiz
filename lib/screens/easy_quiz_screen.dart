@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:bregenz_quiz_game/models/game_manager.dart';
 import 'package:bregenz_quiz_game/models/question.dart';
 import 'package:bregenz_quiz_game/screens/results_screen.dart';
+import 'package:bregenz_quiz_game/screens/story_screen.dart';
 import 'package:bregenz_quiz_game/utils/utils.dart';
 import 'package:bregenz_quiz_game/widgets/fade_button.dart';
 import 'package:flutter/cupertino.dart';
@@ -190,28 +191,6 @@ class _EasyQuizScreenState extends State<EasyQuizScreen> {
                                 _answeredQuestions++;
                               }
                             });
-
-                            await Future.delayed(
-                              const Duration(seconds: 2),
-                              () async {
-                                _currentQuestionIndex++;
-                                if (_currentQuestionIndex >=
-                                    _questions.length) {
-                                  _saveCoins(context);
-                                  await Navigator.of(context).pushReplacement(
-                                    MaterialPageRoute(
-                                      builder: (context) => ResultsScreen(
-                                        answeredQuestions: _answeredQuestions,
-                                        totalCoins: _totalCoins,
-                                      ),
-                                    ),
-                                  );
-                                }
-                                _selectedOptionIndex = null;
-                                _isAnswerCorrect = false;
-                                setState(() {});
-                              },
-                            );
                           }
                         },
                         i,
@@ -236,12 +215,16 @@ class _EasyQuizScreenState extends State<EasyQuizScreen> {
                           setState(() {});
                         }
                       },
-                      child: Image.asset(
-                        "assets/images/bolt.png",
-                        width: screenSize.height * 0.1,
-                        height: screenSize.height * 0.1,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(15),
+                        child: Image.asset(
+                          "assets/images/bolt.png",
+                          width: screenSize.height * 0.07,
+                          height: screenSize.height * 0.07,
+                        ),
                       ),
                     ),
+                    SizedBox(height: screenSize.height * 0.01),
                     Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
@@ -277,8 +260,30 @@ class _EasyQuizScreenState extends State<EasyQuizScreen> {
                       ),
                     ),
                     const Spacer(),
+                    if (_selectedOptionIndex != null)
+                      FadeButton(
+                        text: "Continue",
+                        onPressed: () async {
+                          _currentQuestionIndex++;
+                          if (_currentQuestionIndex >= _questions.length) {
+                            _saveCoins(context);
+                            await Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(
+                                builder: (context) => ResultsScreen(
+                                  answeredQuestions: _answeredQuestions,
+                                  totalCoins: _totalCoins,
+                                ),
+                              ),
+                            );
+                          }
+                          _selectedOptionIndex = null;
+                          _isAnswerCorrect = false;
+                          setState(() {});
+                        },
+                      ),
+                    const SizedBox(height: 10),
                     FadeButton(
-                      text: "Back",
+                      text: "Return",
                       onPressed: () {
                         Navigator.of(context).pop();
                       },

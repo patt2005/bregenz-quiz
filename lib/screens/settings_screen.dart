@@ -71,6 +71,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
               SizedBox(height: screenSize.height * 0.01),
               Consumer<GameManager>(
                 builder: (context, value, child) => Container(
+                  padding:
+                      EdgeInsets.symmetric(vertical: screenSize.height * 0.01),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     gradient: LinearGradient(
@@ -78,21 +80,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     ),
                   ),
                   width: screenSize.width,
-                  child: value.profileImagePath.isNotEmpty
-                      ? ClipRRect(
-                          borderRadius: BorderRadius.circular(20),
-                          child: Image.file(
-                            File(value.profileImagePath),
-                            width: screenSize.width,
-                            height: screenSize.height * 0.22,
-                            fit: BoxFit.cover,
-                          ),
-                        )
-                      : Image.asset(
-                          "assets/images/profile_image.png",
-                          width: screenSize.width,
-                          height: screenSize.height * 0.22,
-                        ),
+                  child: Image.asset(
+                    value.profileImagePath.isEmpty
+                        ? "assets/images/profile_image.png"
+                        : value.profileImagePath,
+                    width: screenSize.width,
+                    height: screenSize.height * 0.18,
+                  ),
                 ),
               ),
               SizedBox(height: screenSize.height * 0.02),
@@ -124,14 +118,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
               ),
               const Spacer(),
               FadeButton(
-                text: "Set nickname",
+                text: "Change nickname",
                 onPressed: () {
                   _showCupertinoPopup(context);
                 },
               ),
               const SizedBox(height: 10),
               FadeButton(
-                text: "Set profile picture",
+                text: "Change profile picture",
                 onPressed: () async {
                   final imagePicker = ImagePicker();
                   final image =
@@ -147,7 +141,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               ),
               const SizedBox(height: 10),
               FadeButton(
-                text: "Back",
+                text: "Return",
                 onPressed: () {
                   Navigator.of(context).pop();
                 },

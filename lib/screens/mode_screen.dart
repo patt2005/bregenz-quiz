@@ -19,30 +19,39 @@ class ModeScreen extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(height: screenSize.height * 0.2),
-              FadeButton(
-                text: "Easy",
-                onPressed: () async {
-                  await Navigator.of(context).push(
-                    CupertinoPageRoute(
-                      builder: (context) => const CategoryScreen(),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Expanded(
+                    child: FadeButton(
+                      text: "Easy",
+                      onPressed: () async {
+                        await Navigator.of(context).push(
+                          CupertinoPageRoute(
+                            builder: (context) => const CategoryScreen(),
+                          ),
+                        );
+                      },
                     ),
-                  );
-                },
-              ),
-              SizedBox(height: screenSize.height * 0.04),
-              FadeButton(
-                text: "Hard",
-                onPressed: () async {
-                  await Navigator.of(context).push(
-                    CupertinoPageRoute(
-                      builder: (context) => const HardQuizScreen(),
+                  ),
+                  const SizedBox(width: 20),
+                  Expanded(
+                    child: FadeButton(
+                      text: "Hard",
+                      onPressed: () async {
+                        await Navigator.of(context).push(
+                          CupertinoPageRoute(
+                            builder: (context) => const HardQuizScreen(),
+                          ),
+                        );
+                      },
                     ),
-                  );
-                },
+                  ),
+                ],
               ),
               const Spacer(),
               FadeButton(
-                text: "Back",
+                text: "Return",
                 onPressed: () => Navigator.of(context).pop(),
               ),
               SizedBox(height: screenSize.height * 0.02),

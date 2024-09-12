@@ -247,28 +247,6 @@ class _HardQuizScreenState extends State<HardQuizScreen> {
                                 _answeredQuestions++;
                               }
                             });
-
-                            await Future.delayed(
-                              const Duration(seconds: 2),
-                              () async {
-                                _currentQuestionIndex++;
-                                if (_currentQuestionIndex >=
-                                    _questions.length) {
-                                  _saveCoins(context);
-                                  await Navigator.of(context).pushReplacement(
-                                    MaterialPageRoute(
-                                      builder: (context) => ResultsScreen(
-                                        answeredQuestions: _answeredQuestions,
-                                        totalCoins: _totalCoins,
-                                      ),
-                                    ),
-                                  );
-                                }
-                                _selectedOptionIndex = null;
-                                _isAnswerCorrect = false;
-                                setState(() {});
-                              },
-                            );
                           }
                         },
                         i,
@@ -334,8 +312,30 @@ class _HardQuizScreenState extends State<HardQuizScreen> {
                       ),
                     ),
                     const Spacer(),
+                    if (_selectedOptionIndex != null)
+                      FadeButton(
+                        text: "Continue",
+                        onPressed: () async {
+                          _currentQuestionIndex++;
+                          if (_currentQuestionIndex >= _questions.length) {
+                            _saveCoins(context);
+                            await Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(
+                                builder: (context) => ResultsScreen(
+                                  answeredQuestions: _answeredQuestions,
+                                  totalCoins: _totalCoins,
+                                ),
+                              ),
+                            );
+                          }
+                          _selectedOptionIndex = null;
+                          _isAnswerCorrect = false;
+                          setState(() {});
+                        },
+                      ),
+                    const SizedBox(height: 10),
                     FadeButton(
-                      text: "Back",
+                      text: "Return",
                       onPressed: () {
                         Navigator.of(context).pop();
                       },

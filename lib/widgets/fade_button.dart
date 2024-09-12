@@ -15,7 +15,7 @@ class FadeButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        borderRadius: BorderRadiusDirectional.circular(20),
+        borderRadius: BorderRadiusDirectional.circular(7),
         gradient: LinearGradient(
           colors: [redColor, whiteColor, redColor],
         ),
@@ -23,7 +23,7 @@ class FadeButton extends StatelessWidget {
       child: ElevatedButton(
         style: ButtonStyle(
           padding: WidgetStatePropertyAll(
-            EdgeInsets.symmetric(vertical: screenSize.height * 0.02),
+            EdgeInsets.symmetric(vertical: screenSize.height * 0.015),
           ),
           backgroundColor: const WidgetStatePropertyAll(Colors.transparent),
           elevation: const WidgetStatePropertyAll(0),

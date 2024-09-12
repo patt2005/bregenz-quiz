@@ -47,7 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             SizedBox(height: screenSize.height * 0.04),
             FadeButton(
-              text: "New game",
+              text: "Start a New Quiz",
               onPressed: () async {
                 await Navigator.of(context).push(
                   CupertinoPageRoute(
@@ -58,7 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             SizedBox(height: screenSize.height * 0.02),
             FadeButton(
-              text: "Results",
+              text: "View Progress",
               onPressed: () async {
                 await Navigator.of(context).push(
                   CupertinoPageRoute(
@@ -69,7 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             SizedBox(height: screenSize.height * 0.02),
             FadeButton(
-              text: "Daily quests",
+              text: "Daily Quiz Challenge",
               onPressed: () async {
                 await Navigator.of(context).push(
                   CupertinoPageRoute(
@@ -80,7 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             SizedBox(height: screenSize.height * 0.02),
             FadeButton(
-              text: "Settings",
+              text: "App Settings",
               onPressed: () async {
                 await Navigator.of(context).push(
                   CupertinoPageRoute(

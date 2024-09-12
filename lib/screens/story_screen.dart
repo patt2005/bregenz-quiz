@@ -70,7 +70,7 @@ class StoryScreen extends StatelessWidget {
                 height: screenSize.height * 0.03,
               ),
               FadeButton(
-                text: "Back",
+                text: "Return",
                 onPressed: () {
                   Navigator.of(context).pop();
                 },
